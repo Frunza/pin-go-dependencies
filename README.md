@@ -109,8 +109,6 @@ FROM golang:1.20.5-alpine3.17
 
 COPY . /app
 WORKDIR /app
-
-CMD ["sh"]
 ```
 
 Let's write the docker compose file for the first step. We want to mount the `output` directory as a volume so that we also have access to it locally and run the script we just wrote:
